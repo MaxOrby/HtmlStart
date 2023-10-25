@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --accent: #e92e22;
+  --dark: #111;
+  --white: #fff;
+  --grey: #676767;
+  --llight: #dadada;
+
+  --Font: "Inter", sans-serif;
+  --Container: 1330px;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--Font);
+  font-style: normal;
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: 5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.color__accent {
+  color: var(--accent);
+}
+
+.container {
+  max-width: var(--Container);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  padding: 0 15px;
+}
+
+section {
+  margin-bottom: 4rem;
+}
